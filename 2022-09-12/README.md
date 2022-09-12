@@ -147,7 +147,14 @@
    21. function -> this will point to the invoker
    22. arrow -> this will point to the definer
 
-
+4. Basics of TS
+   1. Javascript with types
+   2. For Angular, there are guidelines for how to create components, services, etc.
+   3. npm install -g typescript
+   4. tsc abc.ts
+   5. Optionals
+   6. Classes with data members
+   7. Interfaces
 
 
 
