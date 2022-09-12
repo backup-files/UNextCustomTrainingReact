@@ -77,3 +77,82 @@
     29. x, y, z axis - z-index
     30. background image position,
     31. test style - align, font, decoration, transform, 
+    
+3. Basics of JS
+   1. Object Destructuring 
+   ```js
+   const employee = {
+    name: 'Tejas',
+    age: 22
+   };
+   var { name, age } = employee;
+   var { name: empName, age: empAge } = employee;
+   ```
+   2. Array Destructuring
+   3. [y, x] = [x, y]
+   4. Default parameters
+   5. Rest parameters 
+   ```js
+   function total(name, ...marks) {
+    console.log(name, marks);
+   }
+   var john = total('john', 1, 2, 3, 4);
+   ```
+   6. Spread parameters
+   ```js
+   function total(a, b, c, d) {
+    return a + b + c + d;
+   }
+   var args = [1, 2, 3, 4];
+   console.log(total(...args));
+   ```
+   7. Method overloading is not possible, it will take the latest definition
+   ```js
+   function add(a, b) {
+    return a+b;
+   }
+   function add(a, b, c) {
+    return a*b;
+   }
+   console.log(add(10, 20));
+   ```
+   8. Classes and constructor
+   ```js
+   class BankAccount {
+    constructor(accountName, accountNumber) {
+        this.accountName = accountName;
+        this.accountNumber = accountNumber;
+        this.balance = 2000;
+    }
+    withdraw(amount) {
+        this.balance -= amount;
+    }
+    deposit(amount) {
+        this.balance += amount;
+    }
+   }
+   ```
+   9. Supports inheritance `class SavingsAccount extends BankAccount`
+   10. Classes are not hoisted, declarations of functions and variables are hoisted
+   11. Arrays - forEach((item, index, array))
+   12. Names and anonymous functions
+   13. filter - var f = v.filter(function(item) {return item.price > 15000;}); - filter criteria as a boolean
+   14. find - var f = v.find((x) => x > 1000)
+   15. map - var m = v.map((x) => x*x)
+   16. Object.assign({}, mobile) is used to create copy of an object
+   17. reduce - var sum = v.reduce((s, x) => return s + x, 0);
+   18. findIndex - firstIndexOf, index, 
+   19. Arrow => functions
+   20. Every function has a function context -> you can use this.
+   21. function -> this will point to the invoker
+   22. arrow -> this will point to the definer
+
+
+
+
+
+## Assignment
+
+1. Show roman numerals instead of numbers
+2. Zip code html based application
+3. Specificity - handle conflicts in style
