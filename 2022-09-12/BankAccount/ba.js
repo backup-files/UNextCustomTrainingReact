@@ -12,6 +12,7 @@ class BankAccount {
     }
 }
 
-ba = new BankAccount('tejas', 100)
-ba.withdraw(100)
-ba.deposit(100)
+ba = new BankAccount('tejas', 100);
+ba.withdraw('john');
+ba.deposit('john');
+console.log(ba.balance);
