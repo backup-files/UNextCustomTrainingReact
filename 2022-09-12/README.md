@@ -44,3 +44,36 @@
     z. email - input type email
     aa. audio
     ab. video
+
+2. Basics of CSS
+    1. Inline
+    2. Embed
+    3. External - link type='text/css'
+    4. Element selectors
+    5. Id selectors - #id
+    6. class selectors - .class
+    7. attribute selectors - [title], [title^="you"]
+    8. Spcificity -> inline, id, class, element
+    9. Combine selectors - div[title='center']
+    10. Descendant selectors - div p
+    11. Child selectors - div > p
+    12. General Sibling selector - div ~ p
+    13. Immediate Sibling selector - div + p
+    14. Pseudo - a:hover, a:visited, a:active
+    15. Cursor - pointer, move, hand
+    16. display - block, none, visibility:hidden, inline
+    17. first-child - first element of element
+    18. focus - input[type='text']:focus
+    19. multiple - select option[value='1'] 
+    20. nth child - p:nth-child(4) if p is the fourth child of any page
+    21. odd/even nth child - p:nth-child(odd), p:nth-child(even)
+    22. nth child an+b - pth:nth-child(10n+7)
+    23. Pseudo elements - p::first-line, p::first-letter, h1::before, h1::after 
+    24. Responsive web design
+    25. Box model - width, height, padding, margin, border
+    26. Padding - TLBR
+    27. box-sizing: border-box, content-box
+    28. positions: static, relative (top, left), fixed (reference point window position), absolute (parent as the reference)
+    29. x, y, z axis - z-index
+    30. background image position,
+    31. test style - align, font, decoration, transform, 
