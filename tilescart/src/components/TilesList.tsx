@@ -1,22 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TableCreator from '../tablec/tablec';
+import AddTile from './AddTile';
+import Tile from '../data/Tile';
 
 export default function TilesList() {
-    const initialTiles = [
-        {name: 'somany', model: 'nit-01', price: 200},
-        {name: 'johnson', model: 'nit-02', price: 100},
-        {name: 'hsil', model: 'nit-03', price: 300},
-        {name: 'clayhaus', model: 'nit-04', price: 400},
+    const initialTiles: Tile[] = [
+        {name: 'somany', model: 'nit-01', price: '200'},
+        {name: 'johnson', model: 'nit-02', price: '100'},
+        {name: 'hsil', model: 'nit-03', price: '300'},
+        {name: 'clayhaus', model: 'nit-04', price: '400'},
     ]
-    const [tiles, setTiles] = useState(initialTiles);
-
+    const [tiles, setTiles] = useState<Tile[]>(initialTiles);
     return (
-        <>
+        <div>
             <div>TilesList</div>
-            <ol>
-                {tiles.map((tile) => <li>{`${tile.name}, ${tile.model}, ${tile.price}`}</li>)}
-            </ol>
-            <TableCreator headers={['name', 'model', 'price']} data={initialTiles}/>
-        </>
+            <TableCreator headers={['name', 'model', 'price']} data={tiles}/>
+            <AddTile setTiles={setTiles} callback={() => console.log(tiles)}/>
+        </div>
     )
 }

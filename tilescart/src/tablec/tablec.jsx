@@ -1,8 +1,9 @@
+import { useState, useEffect } from "react";
+
 export default function TableCreator(props) {
     const headers = props.headers;
-    const data = props.data;
     return (
-        <table border='|'>
+        <table id='table' border='+'>
         <thead>
         <tr>
         {headers.map((header) => 
@@ -10,7 +11,7 @@ export default function TableCreator(props) {
         )}
         </tr>
         </thead>
-        {data.map((datapoint, index) => {
+        {props.data.map((datapoint, index) => {
             return (
                 <tr key={index}>
                     {headers.map((header) => {
