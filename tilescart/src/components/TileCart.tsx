@@ -23,8 +23,25 @@ export default function TileCart() {
     }
     return (
         <div className='container'>
-        <nav className="navbar navbar-light bg-light">
-            <span className="navbar-brand mb-0 h1">Tiles List</span>
+        <nav className="navbar navbar-light bg-light navbar-expand-lg">
+            <a href="#" className="navbar-brand mb-0 h1">Tiles List</a>
+            <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Home<span className="sr-only">(current)</span></a>
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">About</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Products</a>
+                </li>
+                <li className="nav-item">
+                    <a href="#" className="nav-link">Pricing</a>
+                </li>
+                <li className="nav-item active">
+                    <a href="#" className="nav-link active">Cart</a>
+                </li>
+            </ul>
         </nav>
         <ul className="list-group list-group-horizontal-sm">
             <li className='list-group-item'>
