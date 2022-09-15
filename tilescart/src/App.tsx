@@ -8,6 +8,9 @@ import TileCart from './components/TileCart';
 import { Route, Routes } from 'react-router-dom';
 import AddTile from './components/AddTile';
 import TileCard from './components/TileCard';
+import Products from './components/Products';
+import FeaturedProducts from './components/FeaturedProducts';
+import NewProducts from './components/NewProducts';
 
 function App() {
   return (
@@ -17,6 +20,10 @@ function App() {
       <Route path="/NameCounter" element={<NameCounter/>}/>
       <Route path="/TileCart" element={<TileCart/>}/>
       <Route path="/TilesList" element={<TilesList/>}/>
+      <Route path="/Products" element={<Products/>}>
+        <Route path="FeaturedProducts" element={<FeaturedProducts/>}/>
+        <Route path="NewProducts" element={<NewProducts/>}/>
+      </Route>
     </Routes>
   );
 }
