@@ -33,6 +33,9 @@ export default function NavBar(props: any) {
             <li id="products" className="nav-item">
                 <a href="/Products" className="nav-link">Products</a>
             </li>
+            <li id="get" className="nav-item">
+                <a href="/Get" className="nav-link">Get</a>
+            </li>
             <li id="counter" className="nav-item">
                 <button className="btn btn-primary" onClick={() => {
                     navigate("/Counter");

@@ -11,6 +11,7 @@ import TileCard from './components/TileCard';
 import Products from './components/Products';
 import FeaturedProducts from './components/FeaturedProducts';
 import NewProducts from './components/NewProducts';
+import Get from './components/Get';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="FeaturedProducts" element={<FeaturedProducts/>}/>
         <Route path="NewProducts" element={<NewProducts/>}/>
       </Route>
+      <Route path="/Get" element={<Get/>}/>
     </Routes>
   );
 }
