@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TableCreator from '../tablec/tablec';
 import AddTile from './AddTile';
 import Tile from '../data/Tile';
+import NavBar from './NavBar';
 
 export default function TilesList() {
     const initialTiles: Tile[] = [
@@ -13,6 +14,7 @@ export default function TilesList() {
     const [tiles, setTiles] = useState<Tile[]>(initialTiles);
     return (
         <div>
+            <NavBar activate="tilesList"/>
             <div>TilesList</div>
             <TableCreator headers={['name', 'model', 'price']} data={tiles}/>
             <AddTile setTiles={setTiles} callback={() => console.log(tiles)}/>

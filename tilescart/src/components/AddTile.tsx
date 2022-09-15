@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import Tile from '../data/Tile';
+import NavBar from './NavBar';
 
 export default function AddTile(props: any) {
     const nameRef = useRef<HTMLInputElement>(null);
@@ -18,7 +19,7 @@ export default function AddTile(props: any) {
     }
     return (
         <>
-            <div>AddTile</div>
+            {/* <NavBar activate="addTile"/> */}
             <form>
                 <div>Name: <input type='text' ref={nameRef}/></div>
                 <div>Model: <input type='text' ref={modelRef}/></div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import NavBar from './NavBar';
 
 export default function NameCounter() {
     const [name, setName] = useState('');
@@ -10,7 +11,8 @@ export default function NameCounter() {
         document.title = `you are ${name}`
     }, [name])
     return (
-        <div style={{fontSize: '30px'}}>
+        <div style={{backgroundColor: 'lightblue'}}>
+            <NavBar activate="nameCounter"/>
             <div>NameCounter</div>
             <div id='name'>Name: {name}</div>
             <div>Count: {count}</div> 

@@ -1,8 +1,10 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 export default function TileCard(props: any) {
     return (
         <div className="card">
+            {/* <NavBar activate="tileCard"/> */}
             <div className="card-header">
                 Tile
             </div>
