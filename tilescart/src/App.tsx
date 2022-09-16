@@ -12,6 +12,9 @@ import Products from './components/Products';
 import FeaturedProducts from './components/FeaturedProducts';
 import NewProducts from './components/NewProducts';
 import Get from './components/Get';
+import Login from './components/Login';
+import Locations from './components/Locations';
+import AddReview from './components/AddReview';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route path="NewProducts" element={<NewProducts/>}/>
       </Route>
       <Route path="/Get" element={<Get/>}/>
+      <Route path="/Login" element={<Login/>}/>
+      <Route path="/Locations" element={<Locations/>}/>
+      <Route path="/AddReview" element={<AddReview/>}/>
     </Routes>
   );
 }
